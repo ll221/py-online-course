@@ -1,5 +1,5 @@
 class OnlineCourse:
-    passg
+    pass
     def __init__(self, name, description, weeks):
         self.name = name
         self.description = description
