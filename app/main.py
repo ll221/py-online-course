@@ -20,6 +20,6 @@ class OnlineCourse:
             course_dict["description"]  # type: ignore[assignment]
         )
         days: int = course_dict["days"]  # type: ignore[assignment]
-        weeks: int = cls.days_to_weeks(days)  # type: ignore[arg-type]
+        weeks: int = cls.days_to_weeks(days)  # type: ignore[arg-type]sadsadas
 
         return cls(name=name, description=description, weeks=weeks)
