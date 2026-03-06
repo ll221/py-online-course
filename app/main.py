@@ -21,8 +21,3 @@ class OnlineCourse:
         weeks: int = cls.days_to_weeks(days)
 
         return cls(name=name, description=description, weeks=weeks)
-
-
-
-
-
