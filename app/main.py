@@ -15,12 +15,9 @@ class OnlineCourse:
     def from_dict(
         cls, course_dict: dict[str, int | str]
     ) -> OnlineCourse:
-        name: str = course_dict["name"]  # type: ignore[assignment]
-        description: str = (
-            course_dict["description"]  # type: ignore[assignment]
-        )
-        days: int = course_dict["days"]  # type: ignore[assignment]
-        weeks: int = cls.days_to_weeks(days)  # type:
+        name: str = course_dict["name"]
+        description: str = course_dict["description"]
+        days: int = course_dict["days"]
+        weeks: int = cls.days_to_weeks(days)
 
         return cls(name=name, description=description, weeks=weeks)
-
